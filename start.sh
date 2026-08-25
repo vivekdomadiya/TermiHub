@@ -33,5 +33,5 @@ if [[ ! -d "$VENV" ]]; then
   exit 1
 fi
 
-echo "Starting $TERMIHUB_BOT_NAME..."
+echo "Starting ${TERMIHUB_BOT_NAME:-TermiHub}..."
 exec "$VENV/bin/python" "$SCRIPT_DIR/bot.py"
